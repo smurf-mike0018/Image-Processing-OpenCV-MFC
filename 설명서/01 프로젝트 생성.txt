@@ -1,0 +1,49 @@
+ip
+C++ / Windows / 데스크톱 -> MFC 앱
+
+프로젝트 이름: ip
+위치
+솔루션 이름: ip
+
+애플리케이션 종류: 여러 문서
+애플리케이션 종류 옵션: 탭 문서 체크 해제
+MFC 사용: 정적 라이브러리에서 MFC 사용
+
+고급 프레임 창: 출력 도킹 창만 체크
+
+생성된 클래스: View
+기본 클래스: CScrollView
+
+
+ipl
+C++ / Windows / 라이브러리 -> DLL(동적 연결 라이브러리)
+
+프로젝트 이름: ipl
+
+
+프로젝트 속성
+ip - 모든 구성 / x64
+구성 속성 - C/C++ - 일반 - 추가 포함 디렉터리
+    $(SolutionDir)..\OpenCV\build\include
+    $(SolutionDir)ipl
+구성 속성 - 링커 - 일반 - 추가 라이브러리 디렉터리
+    $(SolutionDir)..\OpenCV\build\x64\vc15\lib
+ip - Release / x64
+구성 속성 - 링커 - 입력 - 추가 종속성
+    opencv_world451.lib
+ip - Debug / x64
+구성 속성 - 링커 - 입력 - 추가 종속성
+    opencv_world451d.lib
+
+ipl - 모든 구성 / x64
+구성 속성 - C/C++ - 일반 - 추가 포함 디렉터리
+    $(SolutionDir)..\OpenCV\build\include
+구성 속성 - 링커 - 일반 - 추가 라이브러리 디렉터리
+    $(SolutionDir)..\OpenCV\build\x64\vc15\lib
+ip - Release / x64
+구성 속성 - 링커 - 입력 - 추가 종속성
+    opencv_world451.lib
+ip - Debug / x64
+구성 속성 - 링커 - 입력 - 추가 종속성
+    opencv_world451d.lib
+    
